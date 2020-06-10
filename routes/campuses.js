@@ -26,7 +26,7 @@ const campuses = [
   },
 ];
 
-/* GET all campuses */
+/* GET all campuses. */
 router.get("/", (req, res, next) => {
   // Campus.findAll()
   //   .then((campuses) => res.json(campuses))
