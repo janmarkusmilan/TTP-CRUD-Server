@@ -36,7 +36,7 @@ router.get("/", (req, res, next) => {
 
 // Route to serve single campus based on its id
 router.get("/:id", (req, res, next) => {
-  const campus = campuses.find((campus) => campus.id === res.params.id);
+  const campus = campuses.find((campus) => campus.id === req.params.id);
 
   res.json(campus);
 });
