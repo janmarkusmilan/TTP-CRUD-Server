@@ -47,6 +47,7 @@ const app = express();
 const configureApp = () => {
   app.use(helmet());
   app.use(logger("dev"));
+  // handle request data:
   app.use(express.json());
   app.use(express.urlencoded({ extended: false }));
   app.use(compression());
@@ -79,7 +80,7 @@ const configureApp = () => {
 
 // Main function declaration;
 const bootApp = async () => {
-  // await syncDatabase();
+  await syncDatabase();
   await configureApp();
 };
 
