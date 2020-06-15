@@ -9,7 +9,7 @@ const Student = db.define("student", {
     type: Sequelize.STRING,
     defaultValue: "https://via.placeholder.com/480x240?text=Student",
   },
-  gpa: { type: Sequelize.STRING, allowNull: false },
+  gpa: { type: Sequelize.STRING },
 });
 
 module.exports = Student;

@@ -20,7 +20,8 @@ router.get("/", async (req, res, next) => {
 
 router.put("/:id", async (req, res, next) => {
   const { id } = req.params;
-  const updatedObj = { ...req.body };
+  const { campusId } = req.body;
+  const updatedObj = { campusId: campusId };
   try {
     const student = await Student.findByPk(id);
     await student.set(updatedObj);

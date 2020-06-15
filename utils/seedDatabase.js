@@ -21,16 +21,19 @@ const seedDatabase = async () => {
       firstName: "Daniel",
       lastName: "Jacob",
       email: "danieljacob@yahoo.com",
+      gpa: "3.4",
     }),
     Student.create({
       firstName: "Sally",
       lastName: "Hensway",
       email: "sallyhensway0@gmail.com",
+      gpa: "3.7",
     }),
     Student.create({
       firstName: "Richard",
       lastName: "Huts",
       email: "richardhuts@icloud.com",
+      gpa: "3.5",
     }),
   ]);
 };
